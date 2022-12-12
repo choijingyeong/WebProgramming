@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>귀한 농산물 귀농</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div>
+                <a href="main.html">
+                    <img id="logo" src="./img/logo.jpg" alt="메인로고">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a>카테고리</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="summary.html">사과</a></li>
+                            <li><a href="summary.html">포도</a></li>
+                            <li><a href="summary.html">딸기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="summary.html">베스트</a></li>
+                    <li><a href="summary.html">제철</a></li>
+                    <li><a href="bucket.html">장바구니</a></li>
+                    <li><a id="login_btn">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="price">
+            <!-- api 불러오면 ---원 부분을 실시간으로 가격을 업데이트 할 수 있게 만들 예정 -->
+            <div id="apple">
+                <span>오늘의 사과 평균 경매 가격</span>
+                <span>8000원</span>
+            </div>
+            <div id="grape">
+                <span>오늘의 포도 평균 경매 가격</span>
+                <span>10000원</span>
+            </div>
+            <div id="straw">
+                <span>오늘의 딸기 평균 경매 가격</span>
+                <span>13000원</span>
+            </div>
+        </section>
+        <section>
+            <div class="para">
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

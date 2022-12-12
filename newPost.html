@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="newPost.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>귀한 농산물 귀농</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div>
+                <a href="main.html">
+                    <img id="logo" src="./img/logo.jpg" alt="메인로고">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a>카테고리</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="summary.html">사과</a></li>
+                            <li><a href="summary.html">포도</a></li>
+                            <li><a href="summary.html">딸기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="summary.html">베스트</a></li>
+                    <li><a href="summary.html">제철</a></li>
+                    <li><a href="bucket.html">장바구니</a></li>
+                    <li><a id="login_btn">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="div">
+        <span>제목</span><input id="title" type="text"><br>
+        <span>가격</span><input id="prize" type="text">
+        <span>단위</span><input id="kg" type="text"><span>kg</span><br>
+        <span>글 내용</span>
+        <textarea id="writing" type="text"></textarea><br>
+        <span>대표 사진 올리기</span>
+        <input type="file" id="file" name="file" value="파일선택" accept=".gif, .jpg, .png, .jpeg"><br>
+        <input id="sub" type="button" value="작성 완료">
+    </div>
+    <script src="newPost.js"></script>
+</body>
+</html>

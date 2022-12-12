@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="buy.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>귀한 농산물 귀농</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div>
+                <a href="main.html">
+                    <img id="logo" src="./img/logo.jpg" alt="메인로고">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a>카테고리</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="summary.html">사과</a></li>
+                            <li><a href="summary.html">포도</a></li>
+                            <li><a href="summary.html">딸기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="summary.html">베스트</a></li>
+                    <li><a href="summary.html">제철</a></li>
+                    <li><a href="bucket.html">장바구니</a></li>
+                    <li><a id="login_btn">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="add">
+            <img id="grape" class="img" src="./img/grape.jpg" alt="거봉포도">
+            <div>
+                <h3>[거봉] 영천 거봉 포도</h3><br><br>
+                <p>
+                    1kg당 9,000원<br>
+                    5kg 단위부터 판매 중
+                </p>
+            </div>
+        </section>
+        <section class="client">
+            <form>
+                <div class="int-area">
+                    <input type="text" name="name" id="name" autocomplete="off" required>
+                    <label for="name">이름</label>
+                </div>
+                <div class="int-area">
+                    <input type="text" name="phone" id="phone" autocomplete="off" required>
+                    <label for="phone">전화번호</label>
+                </div>
+                <div class="int-area">
+                    <input type="text" name="addr" id="addr" autocomplete="off" required>
+                    <label for="addr">주소</label>
+                </div>
+            </form>
+        </section>
+        <section class="pay">
+            <div id="radiobtn">
+                <input type="radio" name="findway" id="deposit">
+                <label for="deposit">무통장 입금</label>
+                <input type="radio" name="findway" id="credit">
+                <label for="credit">신용카드 결제</label>
+            </div>
+        </section>
+        <section class="buybtn">
+            <input type="submit" value="구매하기" onclick="buy()">
+        </section>
+    </main>
+    <script src="buy.js"></script>
+</body>
+
+</html>

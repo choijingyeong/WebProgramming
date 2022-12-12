@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="find.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>귀한 농산물 귀농</title>
+</head>
+
+<body>
+    <section class="login-form">
+        <a href="main.html">
+            <img id="logo" src="./img/logo.jpg" alt="메인로고">
+        </a>
+        <div class="radiobtn">
+            <input type="radio" name="findway" id="email">
+            <label for="email">이메일로 찾기</label>
+            <input type="radio" name="findway" id="phone">
+            <label for="phone">전화번호로 찾기</label>
+        </div>
+        <form id="form">
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">이름</label>
+            </div>
+            <div class="btn-area">
+                <button id="btn" type="submit" value="id">아이디 찾기</button>
+            </div>
+        </form>
+    </section>
+    <script src="find.js"></script>
+</body>
+
+</html>
